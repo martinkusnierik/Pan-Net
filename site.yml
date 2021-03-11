@@ -1,5 +1,6 @@
 # play
 - hosts: localhost
+  become: True
   vars:
     syslog_host: "localhost"
     syslog_port: "514"
