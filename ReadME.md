@@ -9,9 +9,11 @@
 ### Xcode command line developer tools for running Git
 After recent macOS upgrade my Git installation stopped working. I've got following error when trying to run a _Git command_:
 
-`% git status
+```
+% git status
 xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/Comman
-dLineTools/usr/bin/xcrun`
+dLineTools/usr/bin/xcrun
+```
 
 1. Open terminal and run `xcode-select --install`.
 2. Confirm Xcode CLI developer tools installation in the popup window.
