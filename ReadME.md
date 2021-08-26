@@ -5,6 +5,10 @@
 2. Spin-up Ubuntu VM by running following command in terminal `multipass launch --name panet`
 3. List running VMs and verify "panet" VM is running by `multipass list`
 4. Open a shell on a running instance with: `multipass shell panet` or `multipass exec panet -- lsb_release -a`
+5. % multipass mount $PWD panet:/Pan-Net/
+mount failed: Error enabling mount support in 'panet'                           
+
+Please install the 'multipass-sshfs' snap manually inside the instance.
 
 ### Xcode command line developer tools for running Git
 After recent macOS upgrade my Git installation stopped working. I've got following error when trying to run a _Git command_:
