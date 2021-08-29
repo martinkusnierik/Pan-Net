@@ -5,10 +5,11 @@
 2. Spin-up Ubuntu VM by running following command in terminal `multipass launch --name panet`
 3. List running VMs and verify "panet" VM is running by `multipass list`
 4. Open a shell on a running instance with: `multipass shell panet` or `multipass exec panet -- lsb_release -a`
-5. % multipass mount $PWD panet:/Pan-Net/
-mount failed: Error enabling mount support in 'panet'                           
-
-Please install the 'multipass-sshfs' snap manually inside the instance.
+5. Mount the working directory into the panet ubuntu instance `% multipass mount /Users/martinkusnierik/Desktop/Pan-Net panet:/home/ubuntu/Pan-Net`. Command failing with `mount failed: source "/Users/martinkusnierik/Desktop/Pan-Net" is not readable` message.
+6. Log into the Ubuntu shell `multipass shell panet`.
+7. On the Ubuntu VM clone the repo into the home directory `git clone https://github.com/martinkusnierik/Pan-Net.git`
+8.  `cd Pan-Net/`
+9. Run scripts from within the directory.
 
 ### Xcode command line developer tools for running Git
 After recent macOS upgrade my Git installation stopped working. I've got following error when trying to run a _Git command_:
